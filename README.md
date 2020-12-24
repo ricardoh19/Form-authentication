@@ -1,4 +1,4 @@
-Form Authentication
+Form validator
 ---------------------
 A Form that allows the user to register.
 
