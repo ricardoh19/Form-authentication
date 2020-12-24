@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <title>Registration</title>
 </head>
 <body>
@@ -11,15 +13,18 @@
         <form>
             <label for="username" class="label">Username</label><br>
             <input type= "text" placeholder="username" name="username" id="username"><br><br>
-            <div id="feedback"></div>
-
+    
             <label for="password" class="label">Password</label><br>
             <input type="text" placeholder="Password" name="password" id="password"><br><br>
 
             <label for="retype_password" class="label">Retype Password</label><br>
             <input type="text" placeholder="Retype Password" name="retype_password" id="retype_password"><br><br>
 
+            <div id="feedback"></div>
+            <div id="feedback_password"></div><br>
+
             <input type="submit" id="submit" value="submit">
+            
 
         </form>
     </div>  

@@ -1,6 +1,6 @@
 *, *::before,*::after{
     box-sizing:border-box;
-    font-family:Gotham rounded;
+    font-family: 'Open Sans', sans-serif;;
 }
 
 body{
@@ -27,4 +27,8 @@ body{
 }
 #submit{
     font-size: 16px;
+}
+
+#feedback, #feedback_password{
+    color:red;
 }
