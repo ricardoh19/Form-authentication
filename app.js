@@ -1,7 +1,5 @@
 let submit = document.getElementById("submit")
 
-
-
 submit.addEventListener('click',(event)=>{
     let username_form =  document.getElementById("username").value;
     let password_form = document.getElementById("password").value;
@@ -9,16 +7,19 @@ submit.addEventListener('click',(event)=>{
     let feedback = document.getElementById("feedback");
     let feedback_password = document.getElementById("feedback_password");
     
+    
 
     if (username_form.length >= 5){
         console.log("correct");
         feedback.textContent = "";
         feedback_password.textContent = "";
+       
     }
     else if (username_form.length < 5){
         console.log("False");
         feedback.textContent = "Username too short. Atleast 5 characters.";
         feedback_password.textContent = "";
+        
     }
     if (password_form.length != 0 && password_form == retype_password_form){
         console.log("Passwords match");

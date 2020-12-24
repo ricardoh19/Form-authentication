@@ -32,3 +32,8 @@ body{
 #feedback, #feedback_password{
     color:red;
 }
+
+form p{
+    font-weight: 50;
+    font-size: 13px;
+}
