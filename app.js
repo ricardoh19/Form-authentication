@@ -1,40 +1,37 @@
-let submit = document.getElementById("submit")
+var feedback = document.getElementById("feedback");
+var feedback_password = document.getElementById("feedback_password");
 
-submit.addEventListener('click',(event)=>{
-    let username_form =  document.getElementById("username").value;
-    let password_form = document.getElementById("password").value;
-    let retype_password_form = document.getElementById("retype_password").value;
-    let feedback = document.getElementById("feedback");
-    let feedback_password = document.getElementById("feedback_password");
+
+function chkPassword(){
+    var password_form = document.getElementById("password").value;
+    var retype_password_form = document.getElementById("retype_password").value;
     
     
-
-    if (username_form.length >= 5){
-        console.log("correct");
-        feedback.textContent = "";
-        feedback_password.textContent = "";
-       
-    }
-    else if (username_form.length < 5){
-        console.log("False");
-        feedback.textContent = "Username too short. Atleast 5 characters.";
-        feedback_password.textContent = "";
-        
-    }
     if (password_form.length != 0 && password_form == retype_password_form){
-        console.log("Passwords match");
+        return true;
+    }
+    else {
+        alert("No password given or passwords do not match.")
+        return false;
 
-    }else if(password_form.length == 0 || password_form != retype_password_form){
-        console.log("No password given.")
-        feedback_password.textContent = "No password given or passwords don't match.";
-
-    }if(username_form.length >= 5 && password_form.length != 0 && password_form == retype_password_form){
+    }
+    
+    /*
+    if(username_form.length >= 5 && password_form.length != 0 && password_form == retype_password_form){
         alert("Registration successful");
     }
-    
-    event.preventDefault();
-    username.value='';
-    password.value ='';
-    retype_password.value='';
-    
-})
+    */
+}
+
+function chkUsername(){
+    var username_form =  document.getElementById("username").value;
+
+    if (username_form.length >= 5){
+        return true;
+    }
+    else{
+        alert("Username too short. Atleast 5 characters.")
+        return false;
+    }
+}
+

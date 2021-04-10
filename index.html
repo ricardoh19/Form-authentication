@@ -6,29 +6,30 @@
     <link href="styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <title>Registration</title>
+    <title>Registration Form</title>
+    <script src="app.js"></script>
 </head>
 <body>
     <div class="container">
-        <form>
+        <form id="myForm" action="">
             <label for="username" class="label">Username</label><br>
-            <input type= "text" placeholder="username" name="username" id="username">
-            <p>*Username requires atleast 5 characters</p>
+            <input type= "text" placeholder="Username" name="username" id="username">
+            <br /><br />
     
             <label for="password" class="label">Password</label><br>
-            <input type="text" placeholder="Password" name="password" id="password"><br><br>
+            <input type="password" placeholder="Password" name="password" id="password"><br><br>
 
             <label for="retype_password" class="label">Retype Password</label><br>
-            <input type="text" placeholder="Retype Password" name="retype_password" id="retype_password"><br><br>
+            <input type="password" placeholder="Retype Password" name="retype_password" id="retype_password"><br><br>
 
             <div id="feedback"></div>
             <div id="feedback_password"></div><br>
 
-            <input type="submit" id="submit" value="submit">
+            <input type="submit" id="submit" value="Register">
             
 
         </form>
     </div>  
-    <script src="app.js"></script>
+    <script src="validator.js"></script>
 </body>
 </html>

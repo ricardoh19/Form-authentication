@@ -27,6 +27,8 @@ body{
 }
 #submit{
     font-size: 16px;
+    width: 90px;
+
 }
 
 #feedback, #feedback_password{
