@@ -11,3 +11,4 @@ What I Learned
 -----------------------------------
 * Javascript event handling  
 * DOM (document object model) traversal
+* Javascript functions
